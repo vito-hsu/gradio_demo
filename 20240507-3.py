@@ -45,10 +45,17 @@ with gr.Blocks() as demo:
 
 demo.launch()
 
+# 以下兩行是第一次在本機上使用 git 需要執行
 # git config --global user.email "garraypierce@gmail.com"
 # git config --global user.name "Vito Hsu"
+
+# 以下 git init 和 git remote 是第一次與 repository 連結時需要執行
 # git init
 # git remote add origin https://github.com/vito-hsu/gradio_demo.git
+
+# 以下三段代碼是每次更新上傳東西時都需要執行的
 # git add .
 # git commit -m "for_gradio"
 # git push origin main
+# 需要留意 git 本身的 branch 名稱和 github 上面有可能不同，故需要適時執行以下代碼
+# git branch -m master main 這個代碼的意思是將 master 轉變成 main
